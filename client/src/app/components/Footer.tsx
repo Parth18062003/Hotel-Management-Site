@@ -36,12 +36,21 @@ function Footer() {
                       className="w-full py-2 border-none focus:border-transparent focus:ring-transparent bg-[#13294B] text-white sm:text-sm indent-2 rounded-3xl"
                     />
 
-                    <button className="mt-1 w-full text-gradient px-6 py-3 text-[1.1rem] font-bold uppercase tracking-wide text-white transition-none hover:text-[1.2rem] sm:mt-0 sm:w-auto sm:shrink-0">
+                    <button className="mt-1 w-full text-gradient px-6 py-3 text-[1.1rem] font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                       Sign Up
                     </button>
                   </div>
                 </form>
               </div>
+
+              <div className="col-span-2 my-3">
+            <h5>Address</h5>
+            <div className="flex flex-col">
+              <span className="text-muted">1234 Street Name</span>
+              <span className="text-muted">City Name, United States</span>
+            </div>
+          </div>
+      
 
               <div className="col-span-2 sm:col-span-1">
                 <p className="font-medium text-white">Company</p>
