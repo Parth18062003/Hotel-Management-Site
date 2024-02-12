@@ -5,13 +5,14 @@ import React, { useState } from "react";
 import menu from "../../public/assets/menu.svg";
 import close from "../../public/assets/close.svg";
 import Image from "next/image";
+import { useSession } from "next-auth/react";
 
 const Header = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const navLinks = [
     {
-      id: "home",
+      id: "/",
       title: "Home",
     },
     {
@@ -19,15 +20,16 @@ const Header = () => {
       title: "Rooms",
     },
     {
-      id: "About",
-      title: "About",
-    },
-    {
       id: "Contact",
       title: "Contact",
     },
+    {
+      id: "auth",
+      title: "Profile",
+    },
   ];
 
+  const { data: session } = useSession();
   return (
     <>
       <nav className="w-full flex py-6 justify-between items-center">
@@ -38,17 +40,29 @@ const Header = () => {
           Hotellz
         </Link>
         <ul className="list-none sm:flex hidden justify-center items-center flex-1">
-          {navLinks.map((nav, index) => (
-            <li
-              key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[26px] ${
-                active === nav.title ? "text-white" : "text-dimWhite"
-              } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-              onClick={() => setActive(nav.title)}
-            >
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
-            </li>
-          ))}
+          {navLinks.map((nav, index) =>
+            nav.id === "auth" && session?.user ? (
+              <li
+                key={nav.id}
+                className={`font-poppins font-normal cursor-pointer text-[22px] ${
+                  active === nav.title ? "text-white" : "text-dimWhite"
+                } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+                onClick={() => setActive(nav.title)}
+              >
+                <Link href={`/users/${session.user.id}`}>Profile</Link>
+              </li>
+            ) : (
+              <li
+                key={nav.id}
+                className={`font-poppins font-normal cursor-pointer text-[22px] ${
+                  active === nav.title ? "text-white" : "text-dimWhite"
+                } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+                onClick={() => setActive(nav.title)}
+              >
+                <Link href={`/${nav.id}`}>{nav.title}</Link>
+              </li>
+            )
+          )}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
