@@ -86,7 +86,7 @@ const Header = () => {
                   } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => setActive(nav.title)}
                 >
-                  <Link href={`#${nav.id}`}>{nav.title}</Link>
+                  <Link href={`${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
             </ul>

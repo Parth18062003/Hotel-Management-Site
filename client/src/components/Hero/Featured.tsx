@@ -5,7 +5,7 @@ import React from "react";
 const Featured = () => {
   return (
     <>
-      <div className="mt-32 mx-4 md:mx-24">
+      <div className="mt-16 mx-4 md:mx-24">
         <h2 className="text-4xl font-semibold mb-4">Featured Hotels</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           <div className="border-slate-400 border-8 p-4">

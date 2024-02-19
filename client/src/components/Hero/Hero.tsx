@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
+import Section from "./Section";
 
 const Hero = () => {
   return (
@@ -31,6 +32,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Section />
       <Featured />
       <Testimonials />
     </>
