@@ -3,6 +3,7 @@ import React from "react";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import Section from "./Section";
+import SectionImage from "./Section-Image";
 
 const Hero = () => {
   return (
@@ -34,6 +35,7 @@ const Hero = () => {
       </div>
       <Section />
       <Featured />
+      <SectionImage />
       <Testimonials />
     </>
   );
