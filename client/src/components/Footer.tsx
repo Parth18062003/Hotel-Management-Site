@@ -4,7 +4,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="bg-[#0B1210]">
+      <footer className="bg-[#07131e]">
         <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="mt-2 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
