@@ -44,7 +44,7 @@ function Footer() {
               </div>
 
               <div className="col-span-2 my-3">
-            <h5>Address</h5>
+            <div>Address</div>
             <div className="flex flex-col">
               <span className="text-muted">1234 Street Name</span>
               <span className="text-muted">City Name, United States</span>

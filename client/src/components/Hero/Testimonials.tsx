@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Testimonials = () => {
@@ -12,7 +13,7 @@ const Testimonials = () => {
               </h2>
             </div>
 
-            <a
+            <Link
               href="#"
               className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-[#5ce1e6] px-5 py-3 text-[#33bbcf] transition hover:bg-[#33bbcf] hover:text-white md:mt-0"
             >
@@ -32,19 +33,19 @@ const Testimonials = () => {
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <blockquote className="flex h-full flex-col justify-between bg-gray-200 p-6 shadow-sm sm:p-8">
+            <blockquote className="flex h-full flex-col justify-between bg-gray-300 p-6 shadow-sm sm:p-8">
               <div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-orange-500 sm:text-3xl">
+                  <p className="text-2xl font-bold text-slate-800 sm:text-3xl">
                     Stayin' Alive
                   </p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
+                  <p className="mt-4 leading-relaxed text-gray-900">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -53,19 +54,19 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+              <footer className="mt-4 text-sm font-medium text-gray-900 sm:mt-6">
                 &mdash; Michael Scott
               </footer>
             </blockquote>
 
-            <blockquote className="flex h-full flex-col justify-between bg-gray-200 p-6 shadow-sm sm:p-8">
+            <blockquote className="flex h-full flex-col justify-between bg-gray-300 p-6 shadow-sm sm:p-8">
               <div>
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-orange-500 sm:text-3xl">
+                  <p className="text-2xl font-bold text-slate-800 sm:text-3xl">
                     Stayin' Alive
                   </p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
+                  <p className="mt-4 leading-relaxed text-gray-900">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -74,20 +75,20 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+              <footer className="mt-4 text-sm font-medium text-gray-900 sm:mt-6">
                 &mdash; Michael Scott
               </footer>
             </blockquote>
 
-            <blockquote className="flex h-full flex-col justify-between bg-gray-200 p-6 shadow-sm sm:p-8">
+            <blockquote className="flex h-full flex-col justify-between bg-gray-300 p-6 shadow-sm sm:p-8">
               <div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-orange-500 sm:text-3xl">
+                  <p className="text-2xl font-bold text-slate-800 sm:text-3xl">
                     Stayin' Alive
                   </p>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
+                  <p className="mt-4 leading-relaxed text-gray-900">
                     No, Rose, they are not breathing. And they have no arms or
                     legs … Where are they? You know what? If we come across
                     somebody with no arms or legs, do we bother resuscitating
@@ -96,7 +97,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+              <footer className="mt-4 text-sm font-medium text-gray-900 sm:mt-6">
                 &mdash; Parth Kadam
               </footer>
             </blockquote>

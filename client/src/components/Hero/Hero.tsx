@@ -22,11 +22,11 @@ const Hero = () => {
       <div className="grid grid-cols-2">
         <div className="flex px-4 items-center gap-12 container md:mx-48 mx-0">
           <div className="py-10 h-full mt-12">
-            <h1 className="mb-6 text-[3.40rem] md:text-[6rem] text-[#e8edee] leading-none">
-              Elevating Hotel <span className="text-gradient font-medium">Experiences</span> Seamlessly
+            <h1 className="mb-6 text-[3.40rem] md:text-[6rem] text-[#e8edee] leading-none font-semibold">
+              Elevating Hotel <span className="text-gradient font-semibold">Experiences</span> Seamlessly
             </h1>
             <div className="flex justify-start">
-            <button className="px-6 py-3 mt-5 bg-[#33bbcf] rounded-3xl">
+            <button className="px-7 py-3 mt-5 bg-[#335acf] rounded-[2rem] text-2xl">
               Explore
             </button>
             </div>

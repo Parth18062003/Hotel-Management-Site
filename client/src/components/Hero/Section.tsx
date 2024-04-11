@@ -4,7 +4,7 @@ import Image from "next/image";
 const Section = () => {
   return (
     <>
-      <div className="mt-36 container mx-auto flex flex-col lg:flex-row items-center justify-center py-8">
+      <div className="mt-80 md:mt-60 container mx-auto flex flex-col lg:flex-row items-center justify-center py-8">
         {/* Left Side: Image */}
         <div className="lg:w-1/2">
           <Image

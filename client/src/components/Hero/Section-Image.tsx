@@ -8,9 +8,9 @@ const SectionImage = () => {
         <Image
           src="https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="section image"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="bottom"
+          className="absolute inset-0 w-full h-full object-cover object-bottom"
+          height={2000}
+          width={2000}
           priority={true}
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
